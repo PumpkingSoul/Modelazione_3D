@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept - Domus Arcuata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Domus Arcuata</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Render</a></li>
+            <li><a href="concept.html" aria-current="page">Concept</a></li>
+            <li><a href="moodboard.html">Moodboard</a></li>
+            <li><a href="studio-materiali.html">Studio Materiali</a></li>
+            <li><a href="studio-architettonico.html">Studio Architettonico</a></li>
+            <li><a href="esercitazioni.html">Esercitazioni</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+    <main class="portfolio-container">
+
+        <header class="project-header page-intro">
+            <a href="index.html" class="back-link">&larr; Torna al progetto</a>
+            <h1>Concept</h1>
+            <!--
+                SOSTITUISCI questo paragrafo con il racconto del tuo concept:
+                l'idea di partenza, i riferimenti, il ragionamento che ha
+                guidato le scelte compositive e spaziali del progetto.
+            -->
+            <p>Racconta qui l'idea alla base del progetto: da dove nasce, quali riferimenti hai usato e come si è trasformata nelle scelte spaziali e compositive della casa.</p>
+            <span class="editable-note">Testo di esempio — sostituiscilo con la tua descrizione</span>
+        </header>
+
+        <!--
+            GRIGLIA IMMAGINI: quando hai gli schizzi/diagrammi di concept pronti,
+            sostituisci ogni .placeholder-card con una vera .card, seguendo
+            questo esempio (identico a quello usato nella home page):
+
+            <div class="card" tabindex="0" role="button" aria-label="Apri immagine: NOME" onclick="openLightbox(this)">
+                <img src="img/nome-file.jpg" alt="Descrizione" loading="lazy">
+                <div class="card-overlay">Didascalia</div>
+            </div>
+        -->
+        <section class="gallery-section">
+            <h2 class="section-subtitle">Schizzi e Diagrammi</h2>
+            <p class="section-desc">Prospetti, piante/sezioni e studi di dettaglio realizzati a mano nella fase iniziale del progetto.</p>
+            <div class="gallery-grid">
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Prospetto Est - Prospetto Nord" onclick="openLightbox(this)">
+                    <img src="img/concept-prospetto-est-nord.jpg" alt="Prospetto Est - Prospetto Nord" loading="lazy">
+                    <div class="card-overlay">Studio archi</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Pianta e Sezione A" onclick="openLightbox(this)">
+                    <img src="img/concept-pianta-sezione-a.jpg" alt="Pianta e Sezione A" loading="lazy">
+                    <div class="card-overlay">Studio sugli elementi portanti</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Dettagli Architettonici" onclick="openLightbox(this)">
+                    <img src="img/concept-dettagli-archi.jpg" alt="Dettagli Architettonici" loading="lazy">
+                    <div class="card-overlay">Dettagli Architettonici</div>
+                </div>
+                <!--
+                <div class="placeholder-card">
+                    <span class="placeholder-icon">+</span>
+                    <span class="placeholder-label">Studio di volume</span>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <section class="gallery-section sub-section">
+            <h2 class="section-subtitle">Note di Concept</h2>
+            <p class="section-desc">Spazio libero per approfondire il ragionamento progettuale, punto per punto, con testo e magari citazioni dei riferimenti usati.</p>
+        </section>
+
+    </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox" aria-label="Chiudi">&times;</span>
+        <img id="lightbox-img" src="" alt="Ingrandimento">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

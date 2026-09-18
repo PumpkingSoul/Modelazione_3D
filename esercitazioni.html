@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazioni - Domus Arcuata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Domus Arcuata</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Render</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="moodboard.html">Moodboard</a></li>
+            <li><a href="studio-materiali.html">Studio Materiali</a></li>
+            <li><a href="studio-architettonico.html">Studio Architettonico</a></li>
+            <li><a href="esercitazioni.html" aria-current="page">Esercitazioni</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+    <main class="portfolio-container">
+
+        <header class="project-header page-intro">
+            <a href="index.html" class="back-link">&larr; Torna al progetto</a>
+            <h1>Esercitazioni e Prove di Laboratorio</h1>
+            <p>Test di illuminazione, modellazione di processo, e studi preliminari realizzati nel corso dell'anno, indipendenti dal progetto principale ma utili a mostrare il percorso di apprendimento degli strumenti.</p>
+        </header>
+
+        <section class="gallery-section">
+            <div class="gallery-grid">
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: AbaResturant" onclick="openLightbox(this)">
+                    <img src="img/abaresturant.jpg" alt="AbaResturant" loading="lazy">
+                    <div class="card-overlay">AbaResturant</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Calici" onclick="openLightbox(this)">
+                    <img src="img/calici.jpg" alt="Calici" loading="lazy">
+                    <div class="card-overlay">Calici</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Decanter" onclick="openLightbox(this)">
+                    <img src="img/decanter.jpg" alt="Decanter" loading="lazy">
+                    <div class="card-overlay">Decanter</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Terreni" onclick="openLightbox(this)">
+                    <img src="img/terreni.jpg" alt="Terreni" loading="lazy">
+                    <div class="card-overlay">Terreni</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: CollinaParco" onclick="openLightbox(this)">
+                    <img src="img/collinaparco.jpg" alt="CollinaParco" loading="lazy">
+                    <div class="card-overlay">CollinaParco</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Pensilina" onclick="openLightbox(this)">
+                    <img src="img/pensilina.jpg" alt="Pensilina" loading="lazy">
+                    <div class="card-overlay">Pensilina</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Stadio" onclick="openLightbox(this)">
+                    <img src="img/stadio.jpg" alt="Stadio" loading="lazy">
+                    <div class="card-overlay">Stadio</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: ScenaIntPrimoRender" onclick="openLightbox(this)">
+                    <img src="img/ScenaIntPrimoRender.jpg" alt="ScenaIntPrimoRender" loading="lazy">
+                    <div class="card-overlay">ScenaIntPrimoRender</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Statuetta" onclick="openLightbox(this)">
+                    <img src="img/Statuetta.jpg" alt="Statuetta" loading="lazy">
+                    <div class="card-overlay">Statuetta</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox" aria-label="Chiudi">&times;</span>
+        <img id="lightbox-img" src="" alt="Ingrandimento">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

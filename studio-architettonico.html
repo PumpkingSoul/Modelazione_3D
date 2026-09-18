@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Architettonico - Domus Arcuata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Domus Arcuata</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Render</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="moodboard.html">Moodboard</a></li>
+            <li><a href="studio-materiali.html">Studio Materiali</a></li>
+            <li><a href="studio-architettonico.html" aria-current="page">Studio Architettonico</a></li>
+            <li><a href="esercitazioni.html">Esercitazioni</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+    <main class="portfolio-container">
+
+        <header class="project-header page-intro">
+            <a href="index.html" class="back-link">&larr; Torna al progetto</a>
+            <h1>Studio Architettonico</h1>
+            <!--
+                SOSTITUISCI questo paragrafo: descrivi l'impianto distributivo,
+                le scelte planimetriche e come si sviluppano piante, prospetti
+                e sezioni del progetto.
+            -->
+            <p>Piante, prospetti e sezioni del progetto, con le scelte distributive e planimetriche che definiscono l'organizzazione degli spazi.</p>
+            <span class="editable-note">Testo di esempio — sostituiscilo con la tua descrizione</span>
+        </header>
+
+        <!--
+            Per ogni sottosezione, sostituisci le .placeholder-card con vere
+            .card seguendo l'esempio già usato nella home page:
+
+            <div class="card" tabindex="0" role="button" aria-label="Apri immagine: NOME" onclick="openLightbox(this)">
+                <img src="img/nome-file.jpg" alt="Descrizione" loading="lazy">
+                <div class="card-overlay">Didascalia</div>
+            </div>
+        -->
+        <section class="gallery-section sub-section">
+            <h2 class="section-subtitle">Tavole di Progetto</h2>
+            <p class="section-desc">Le tavole complete, con piante, prospetti e sezioni del progetto.</p>
+            <div class="tavole-grid">
+                <div class="card tavola-card" tabindex="0" role="button" aria-label="Apri immagine: Tavola 1" onclick="openLightbox(this)">
+                    <img src="img/studio-tavola1.jpg" alt="Tavola 1 - Prospetto e Pianta" loading="lazy">
+                    <div class="card-overlay">Tavola 1</div>
+                </div>
+                <div class="card tavola-card" tabindex="0" role="button" aria-label="Apri immagine: Tavola 2" onclick="openLightbox(this)">
+                    <img src="img/studio-tavola2.jpg" alt="Tavola 2 - Dettaglio e Sezione" loading="lazy">
+                    <div class="card-overlay">Tavola 2</div>
+                </div>
+                <div class="card tavola-card" tabindex="0" role="button" aria-label="Apri immagine: Tavola 3" onclick="openLightbox(this)">
+                    <img src="img/studio-tavola3.jpg" alt="Tavola 3 - Sezione" loading="lazy">
+                    <div class="card-overlay">Tavola 3</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox" aria-label="Chiudi">&times;</span>
+        <img id="lightbox-img" src="" alt="Ingrandimento">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

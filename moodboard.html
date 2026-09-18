@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodboard - Domus Arcuata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Domus Arcuata</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Render</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="moodboard.html" aria-current="page">Moodboard</a></li>
+            <li><a href="studio-materiali.html">Studio Materiali</a></li>
+            <li><a href="studio-architettonico.html">Studio Architettonico</a></li>
+            <li><a href="esercitazioni.html">Esercitazioni</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+    <main class="portfolio-container">
+
+        <header class="project-header page-intro">
+            <a href="index.html" class="back-link">&larr; Torna al progetto</a>
+            <h1>Moodboard</h1>
+            <!--
+                SOSTITUISCI questo paragrafo: descrivi l'atmosfera che vuoi
+                trasmettere (luce, materiali, colori, riferimenti fotografici
+                o di altri progetti che hanno ispirato le tue scelte).
+            -->
+            <p>Riferimenti visivi, atmosfere e ispirazioni che hanno guidato le scelte estetiche del progetto: luce, colore, materiali, mood generale.</p>
+            <span class="editable-note">Testo di esempio — sostituiscilo con la tua descrizione</span>
+        </header>
+
+        <!--
+            GRIGLIA MOODBOARD: sostituisci ogni .placeholder-card con una
+            vera .card, come nell'esempio già presente nella home:
+
+            <div class="card" tabindex="0" role="button" aria-label="Apri immagine: NOME" onclick="openLightbox(this)">
+                <img src="img/nome-file.jpg" alt="Descrizione" loading="lazy">
+                <div class="card-overlay">Didascalia</div>
+            </div>
+        -->
+        <section class="gallery-section">
+            <div class="moodboard-grid">
+                <div class="placeholder-card">
+                    <span class="placeholder-icon">+</span>
+                    <span class="placeholder-label">Riferimento 1</span>
+                </div>
+                <div class="placeholder-card">
+                    <span class="placeholder-icon">+</span>
+                    <span class="placeholder-label">Riferimento 2</span>
+                </div>
+                <div class="placeholder-card">
+                    <span class="placeholder-icon">+</span>
+                    <span class="placeholder-label">Riferimento 3</span>
+                </div>
+                <div class="placeholder-card">
+                    <span class="placeholder-icon">+</span>
+                    <span class="placeholder-label">Riferimento 4</span>
+                </div>
+                <div class="placeholder-card">
+                    <span class="placeholder-icon">+</span>
+                    <span class="placeholder-label">Riferimento 5</span>
+                </div>
+                <div class="placeholder-card">
+                    <span class="placeholder-icon">+</span>
+                    <span class="placeholder-label">Riferimento 6</span>
+                </div>
+                <div class="placeholder-card">
+                    <span class="placeholder-icon">+</span>
+                    <span class="placeholder-label">Riferimento 7</span>
+                </div>
+                <div class="placeholder-card">
+                    <span class="placeholder-icon">+</span>
+                    <span class="placeholder-label">Riferimento 8</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox" aria-label="Chiudi">&times;</span>
+        <img id="lightbox-img" src="" alt="Ingrandimento">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

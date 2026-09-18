@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Materiali - Domus Arcuata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Domus Arcuata</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Render</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="moodboard.html">Moodboard</a></li>
+            <li><a href="studio-materiali.html" aria-current="page">Studio Materiali</a></li>
+            <li><a href="studio-architettonico.html">Studio Architettonico</a></li>
+            <li><a href="esercitazioni.html">Esercitazioni</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+    <main class="portfolio-container">
+
+        <header class="project-header page-intro">
+            <a href="index.html" class="back-link">&larr; Torna al progetto</a>
+            <h1>Studio dei Materiali</h1>
+            <!--
+                SOSTITUISCI questo paragrafo: descrivi il criterio con cui hai
+                scelto le finiture (legno, pietra, intonaci, metalli...) e
+                come si relazionano con la luce naturale e artificiale.
+            -->
+            <p>Finiture, texture e superfici selezionate per il progetto, con particolare attenzione a come reagiscono alla luce naturale e artificiale nei render.</p>
+            <span class="editable-note">Testo di esempio — sostituiscilo con la tua descrizione</span>
+        </header>
+
+        <!--
+            SCHEDE MATERIALE: per ogni materiale reale, sostituisci il div
+            .material-swatch con una vera immagine (es. <img src="img/legno-rovere.jpg" ...>)
+            e aggiorna nome e descrizione in .material-info.
+        -->
+        <section class="gallery-section">
+            <div class="material-grid">
+                <div class="material-card">
+                    <div class="material-swatch">Anteprima materiale</div>
+                    <div class="material-info">
+                        <span class="material-name">Nome materiale</span>
+                        <span class="material-meta">Finitura · Provenienza</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch">Anteprima materiale</div>
+                    <div class="material-info">
+                        <span class="material-name">Nome materiale</span>
+                        <span class="material-meta">Finitura · Provenienza</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch">Anteprima materiale</div>
+                    <div class="material-info">
+                        <span class="material-name">Nome materiale</span>
+                        <span class="material-meta">Finitura · Provenienza</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch">Anteprima materiale</div>
+                    <div class="material-info">
+                        <span class="material-name">Nome materiale</span>
+                        <span class="material-meta">Finitura · Provenienza</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch">Anteprima materiale</div>
+                    <div class="material-info">
+                        <span class="material-name">Nome materiale</span>
+                        <span class="material-meta">Finitura · Provenienza</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch">Anteprima materiale</div>
+                    <div class="material-info">
+                        <span class="material-name">Nome materiale</span>
+                        <span class="material-meta">Finitura · Provenienza</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox" aria-label="Chiudi">&times;</span>
+        <img id="lightbox-img" src="" alt="Ingrandimento">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
