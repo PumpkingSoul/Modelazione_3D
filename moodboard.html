@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodboard - Domus Arcuata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Domus Arcuata</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Render</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="moodboard.html" aria-current="page">Moodboard</a></li>
+            <li><a href="studio-materiali.html">Studio Materiali</a></li>
+            <li><a href="studio-architettonico.html">Studio Architettonico</a></li>
+            <li><a href="esercitazioni.html">Esercitazioni</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+    <main class="portfolio-container">
+
+        <header class="project-header page-intro">
+            <a href="index.html" class="back-link">&larr; Torna al progetto</a>
+            <h1>Moodboard</h1>
+            <p>I riferimenti visivi da cui è partito il progetto: la Casa del Puente di Amancio Williams, per l'idea di una casa-ponte sospesa sopra l'acqua, e gli acquedotti romani, per il linguaggio dell'arco in pietra come elemento strutturale ed espressivo. Da qui derivano anche le atmosfere di luce e la palette materica sviluppate nelle pagine successive.</p>
+        </header>
+
+        <!--
+            Le immagini sotto sono collegate direttamente a Wikimedia Commons
+            (licenza Creative Commons, con credito riportato sotto ogni foto)
+            perché non è stato possibile scaricarle in locale in questa sessione.
+            Se preferisci averle ospitate sul tuo dominio, scarica i file dai
+            link "Fonte" e sostituisci il percorso in src="" con "img/nome-file.jpg".
+        -->
+        <section class="gallery-section">
+            <p class="section-desc" style="margin-bottom:20px;">Immagini con licenza Creative Commons da Wikimedia Commons. Il credito e il link alla fonte sono riportati sotto ogni foto, come richiesto dalla licenza.</p>
+            <div class="moodboard-grid">
+                <div class="moodboard-item">
+                    <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Casa del Puente" onclick="openLightbox(this)">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Casa_del_Puente_-_Amancio_Williams.jpg" alt="Casa del Puente, Amancio Williams" loading="lazy">
+                        <div class="card-overlay">Casa del Puente</div>
+                    </div>
+                    <a class="moodboard-credit" href="https://commons.wikimedia.org/wiki/File:Casa_del_Puente_-_Amancio_Williams.jpg" target="_blank" rel="noopener">Amancio Williams, 1946 · Wikimedia Commons</a>
+                </div>
+                <div class="moodboard-item">
+                    <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Acquedotto romano, Pont du Gard" onclick="openLightbox(this)">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pont_du_Gard_%2830%29.jpg" alt="Pont du Gard, acquedotto romano" loading="lazy">
+                        <div class="card-overlay">Acquedotto Romano</div>
+                    </div>
+                    <a class="moodboard-credit" href="https://commons.wikimedia.org/wiki/File:Pont_du_Gard_(30).jpg" target="_blank" rel="noopener">Foto: Tournasol7, CC BY-SA 4.0</a>
+                </div>
+                <div class="moodboard-item">
+                    <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Pietra illuminata di notte" onclick="openLightbox(this)">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Heidelberg_Castle_by_night.jpg" alt="Muro in pietra illuminato di notte" loading="lazy">
+                        <div class="card-overlay">Pietra Illuminata di Notte</div>
+                    </div>
+                    <a class="moodboard-credit" href="https://commons.wikimedia.org/wiki/File:Heidelberg_Castle_by_night.jpg" target="_blank" rel="noopener">CC BY-SA 4.0, Wikimedia Commons</a>
+                </div>
+                <div class="moodboard-item">
+                    <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Casa sull'acqua, Fallingwater" onclick="openLightbox(this)">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fallingwater_-_by_Frank_Lloyd_Wright.jpg" alt="Fallingwater, casa sospesa sull'acqua di Frank Lloyd Wright" loading="lazy">
+                        <div class="card-overlay">Casa sull'Acqua</div>
+                    </div>
+                    <a class="moodboard-credit" href="https://commons.wikimedia.org/wiki/File:Fallingwater_-_by_Frank_Lloyd_Wright.jpg" target="_blank" rel="noopener">Fallingwater, F. L. Wright · CC BY-SA 3.0</a>
+                </div>
+                <div class="moodboard-item">
+                    <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Foresta in autunno" onclick="openLightbox(this)">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Autumn_light_in_the_Sonian_Forest.jpg" alt="Luce autunnale nella foresta" loading="lazy">
+                        <div class="card-overlay">Paesaggio Autunnale</div>
+                    </div>
+                    <a class="moodboard-credit" href="https://commons.wikimedia.org/wiki/File:Autumn_light_in_the_Sonian_Forest.jpg" target="_blank" rel="noopener">Foto: GdML, CC BY-SA 4.0</a>
+                </div>
+                <div class="moodboard-item">
+                    <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Texture di pietra a spacco" onclick="openLightbox(this)">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grey_taupe_moderately_deteriorating_aged_eroded_worn_fieldstone_seamless_building_wall_texture.jpg" alt="Texture di pietra a spacco irregolare" loading="lazy">
+                        <div class="card-overlay">Texture Pietra a Spacco</div>
+                    </div>
+                    <a class="moodboard-credit" href="https://commons.wikimedia.org/wiki/File:Grey_taupe_moderately_deteriorating_aged_eroded_worn_fieldstone_seamless_building_wall_texture.jpg" target="_blank" rel="noopener">CC0, Wikimedia Commons</a>
+                </div>
+                <div class="moodboard-item">
+                    <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Texture di legno scuro" onclick="openLightbox(this)">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Reclaimed_Wood_Floor.jpg" alt="Texture di pavimento in legno scuro" loading="lazy">
+                        <div class="card-overlay">Texture Legno Scuro</div>
+                    </div>
+                    <a class="moodboard-credit" href="https://commons.wikimedia.org/wiki/File:Reclaimed_Wood_Floor.jpg" target="_blank" rel="noopener">CC BY-SA 2.0, Wikimedia Commons</a>
+                </div>
+                <div class="moodboard-item">
+                    <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Texture di pietra chiara" onclick="openLightbox(this)">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/White_stone_texture_%2801%29.jpg" alt="Texture di pietra chiara" loading="lazy">
+                        <div class="card-overlay">Texture Pietra Chiara</div>
+                    </div>
+                    <a class="moodboard-credit" href="https://commons.wikimedia.org/wiki/File:White_stone_texture_(01).jpg" target="_blank" rel="noopener">CC BY-SA 3.0, Wikimedia Commons</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox" aria-label="Chiudi">&times;</span>
+        <img id="lightbox-img" src="" alt="Ingrandimento">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept - Domus Arcuata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Domus Arcuata</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Render</a></li>
+            <li><a href="concept.html" aria-current="page">Concept</a></li>
+            <li><a href="moodboard.html">Moodboard</a></li>
+            <li><a href="studio-materiali.html">Studio Materiali</a></li>
+            <li><a href="studio-architettonico.html">Studio Architettonico</a></li>
+            <li><a href="esercitazioni.html">Esercitazioni</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+    <main class="portfolio-container">
+
+        <header class="project-header page-intro">
+            <a href="index.html" class="back-link">&larr; Torna al progetto</a>
+            <h1>Concept</h1>
+            <p>Il punto di partenza è stato lo studio della Casa del Puente di Amancio Williams: l'idea di una casa che non si limita ad affacciarsi sul paesaggio, ma lo attraversa fisicamente, usando la struttura portante come elemento architettonico primario. Da qui nasce la scelta dell'arco, non solo come soluzione strutturale ma come richiamo diretto alla tradizione costruttiva degli acquedotti romani — un sistema antico per portare l'acqua, reinterpretato qui come sistema per attraversarla. Gli schizzi e il modello di studio raccolti in questa pagina documentano come l'idea iniziale sia stata verificata e sviluppata, dalla proporzione dell'arco al suo comportamento strutturale sotto carico.</p>
+        </header>
+
+        <!--
+            GRIGLIA IMMAGINI: quando hai gli schizzi/diagrammi di concept pronti,
+            sostituisci ogni .placeholder-card con una vera .card, seguendo
+            questo esempio (identico a quello usato nella home page):
+
+            <div class="card" tabindex="0" role="button" aria-label="Apri immagine: NOME" onclick="openLightbox(this)">
+                <img src="img/nome-file.jpg" alt="Descrizione" loading="lazy">
+                <div class="card-overlay">Didascalia</div>
+            </div>
+        -->
+        <section class="gallery-section">
+            <h2 class="section-subtitle">Schizzi e Diagrammi</h2>
+            <p class="section-desc">Prospetti, piante/sezioni e studi di dettaglio realizzati a mano nella fase iniziale del progetto.</p>
+            <div class="gallery-grid">
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Prospetto Est - Prospetto Nord" onclick="openLightbox(this)">
+                    <img src="img/concept-prospetto-est-nord.jpg" alt="Prospetto Est - Prospetto Nord" loading="lazy">
+                    <div class="card-overlay">Prospetto Est - Prospetto Nord</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Pianta e Sezione A" onclick="openLightbox(this)">
+                    <img src="img/concept-pianta-sezione-a.jpg" alt="Pianta e Sezione A" loading="lazy">
+                    <div class="card-overlay">Pianta e Sezione A</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Dettagli Architettonici" onclick="openLightbox(this)">
+                    <img src="img/concept-dettagli-archi.jpg" alt="Dettagli Architettonici" loading="lazy">
+                    <div class="card-overlay">Dettagli Architettonici</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section sub-section">
+            <h2 class="section-subtitle">Modello di Studio</h2>
+            <p class="section-desc">Plastico fisico realizzato per verificare le proporzioni e il comportamento strutturale della struttura ad arco.</p>
+            <div class="gallery-grid">
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Modello - Prospetto" onclick="openLightbox(this)">
+                    <img src="img/concept-modello-prospetto.jpg" alt="Modello - Prospetto" loading="lazy">
+                    <div class="card-overlay">Modello - Prospetto</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Modello - Dettaglio Arco" onclick="openLightbox(this)">
+                    <img src="img/concept-modello-dettaglio-arco.jpg" alt="Modello - Dettaglio Arco" loading="lazy">
+                    <div class="card-overlay">Modello - Dettaglio Arco</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Modello - Vista dall'Alto" onclick="openLightbox(this)">
+                    <img src="img/concept-modello-vista-alto.jpg" alt="Modello - Vista dall'Alto" loading="lazy">
+                    <div class="card-overlay">Modello - Vista dall'Alto</div>
+                </div>
+                <div class="card" tabindex="0" role="button" aria-label="Apri immagine: Modello - Studio Struttura ad Arco" onclick="openLightbox(this)">
+                    <img src="img/concept-modello-struttura-arco.jpg" alt="Modello - Studio Struttura ad Arco" loading="lazy">
+                    <div class="card-overlay">Modello - Studio Struttura</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section sub-section">
+            <h2 class="section-subtitle">Note di Concept</h2>
+            <p class="section-desc">Alcuni aspetti del ragionamento progettuale approfonditi punto per punto.</p>
+            <div class="note-list">
+                <div class="note-item">
+                    <h3 class="note-title">Il ponte come soglia</h3>
+                    <p class="note-text">La scelta di attraversare l'acqua, invece di limitarsi ad affacciarsi su di essa, trasforma l'ingresso in un rito di passaggio: si arriva alla casa solo dopo aver attraversato il vuoto sottostante, un gesto che richiama fisicamente l'attraversamento di un ponte romano.</p>
+                </div>
+                <div class="note-item">
+                    <h3 class="note-title">Pietra e vetro, permanenza e leggerezza</h3>
+                    <p class="note-text">Il contrasto tra il rivestimento in pietra a vista — materiale antico e massiccio — e le ampie vetrate strutturali racconta la tensione tra la solidità dell'arco, che deve reggere un carico, e la leggerezza degli spazi abitati che sorregge.</p>
+                </div>
+                <div class="note-item">
+                    <h3 class="note-title">La luce come materiale</h3>
+                    <p class="note-text">I render diurni e notturni non sono solo due varianti dello stesso progetto: raccontano due modi diversi di abitare la pietra. Di giorno assorbe la luce naturale, di notte viene scavata dalle luci verticali che ne accentuano texture e massa.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox" aria-label="Chiudi">&times;</span>
+        <img id="lightbox-img" src="" alt="Ingrandimento">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

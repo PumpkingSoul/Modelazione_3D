@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Materiali - Domus Arcuata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Domus Arcuata</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Render</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="moodboard.html">Moodboard</a></li>
+            <li><a href="studio-materiali.html" aria-current="page">Studio Materiali</a></li>
+            <li><a href="studio-architettonico.html">Studio Architettonico</a></li>
+            <li><a href="esercitazioni.html">Esercitazioni</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+    <main class="portfolio-container">
+
+        <header class="project-header page-intro">
+            <a href="index.html" class="back-link">&larr; Torna al progetto</a>
+            <h1>Studio dei Materiali</h1>
+            <!--
+                SOSTITUISCI questo paragrafo: descrivi il criterio con cui hai
+                scelto le finiture (legno, pietra, intonaci, metalli...) e
+                come si relazionano con la luce naturale e artificiale.
+            -->
+            <p>Le finiture selezionate per il progetto: pietra a vista e intonaco per l'involucro esterno, marmo e legno per gli ambienti interni, dettagli in metallo nero e tessuto per gli arredi. Ogni materiale è stato scelto anche in base a come reagisce alla luce naturale e artificiale nei render.</p>
+        </header>
+
+        <!--
+            SCHEDE MATERIALE: ogni scheda mostra un campione ritagliato
+            direttamente dai render. Per aggiungerne uno nuovo, copia il
+            blocco .material-card e aggiorna immagine, nome e descrizione.
+        -->
+        <section class="gallery-section">
+            <div class="material-grid">
+                <div class="material-card">
+                    <div class="material-swatch" tabindex="0" role="button" aria-label="Apri immagine: Pietra a Vista" onclick="openLightbox(this)">
+                        <img src="img/materiale-pietra-vista.jpg" alt="Pietra a Vista" loading="lazy">
+                    </div>
+                    <div class="material-info">
+                        <span class="material-name">Pietra a Vista</span>
+                        <span class="material-meta">Facciata e muri interni · rivestimento in pietrame</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch" tabindex="0" role="button" aria-label="Apri immagine: Intonaco Bianco" onclick="openLightbox(this)">
+                        <img src="img/materiale-intonaco-bianco.jpg" alt="Intonaco Bianco" loading="lazy">
+                    </div>
+                    <div class="material-info">
+                        <span class="material-name">Intonaco Bianco</span>
+                        <span class="material-meta">Volume aggettante · finitura liscia</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch" tabindex="0" role="button" aria-label="Apri immagine: Vetro Strutturale" onclick="openLightbox(this)">
+                        <img src="img/materiale-vetro.jpg" alt="Vetro Strutturale" loading="lazy">
+                    </div>
+                    <div class="material-info">
+                        <span class="material-name">Vetro Strutturale</span>
+                        <span class="material-meta">Serramenti e parapetti · vetrate a tutta altezza</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch" tabindex="0" role="button" aria-label="Apri immagine: Marmo Bianco Venato" onclick="openLightbox(this)">
+                        <img src="img/materiale-marmo-bianco.jpg" alt="Marmo Bianco Venato" loading="lazy">
+                    </div>
+                    <div class="material-info">
+                        <span class="material-name">Marmo Bianco Venato</span>
+                        <span class="material-meta">Isola cucina · superficie lucida</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch" tabindex="0" role="button" aria-label="Apri immagine: Pietra Scura Testurizzata" onclick="openLightbox(this)">
+                        <img src="img/materiale-pietra-scura.jpg" alt="Pietra Scura Testurizzata" loading="lazy">
+                    </div>
+                    <div class="material-info">
+                        <span class="material-name">Pietra Scura Testurizzata</span>
+                        <span class="material-meta">Piano cucina · finitura ruvida</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch" tabindex="0" role="button" aria-label="Apri immagine: Gres Porcellanato Effetto Legno" onclick="openLightbox(this)">
+                        <img src="img/materiale-legno-rovere.jpg" alt="Gres Porcellanato Effetto Legno" loading="lazy">
+                    </div>
+                    <div class="material-info">
+                        <span class="material-name">Gres Porcellanato Effetto Legno</span>
+                        <span class="material-meta">Pavimentazione interna · posa a doghe</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch" tabindex="0" role="button" aria-label="Apri immagine: Metallo Nero Opaco" onclick="openLightbox(this)">
+                        <img src="img/materiale-metallo-nero.jpg" alt="Metallo Nero Opaco" loading="lazy">
+                    </div>
+                    <div class="material-info">
+                        <span class="material-name">Metallo Nero Opaco</span>
+                        <span class="material-meta">Sedute e infissi · verniciatura opaca</span>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-swatch" tabindex="0" role="button" aria-label="Apri immagine: Tessuto Velluto Rosso" onclick="openLightbox(this)">
+                        <img src="img/materiale-tessuto-velluto.jpg" alt="Tessuto Velluto Rosso" loading="lazy">
+                    </div>
+                    <div class="material-info">
+                        <span class="material-name">Tessuto Velluto Rosso</span>
+                        <span class="material-meta">Testiera camera da letto · rivestimento imbottito</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox" aria-label="Chiudi">&times;</span>
+        <img id="lightbox-img" src="" alt="Ingrandimento">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
