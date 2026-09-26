@@ -18,9 +18,9 @@
             <li><a href="index.html" aria-current="page">Render</a></li>
             <li><a href="concept.html">Concept</a></li>
             <li><a href="moodboard.html">Moodboard</a></li>
+            <li><a href="scheda-cliente.html">Scheda Cliente</a></li>
             <li><a href="studio-materiali.html">Studio Materiali</a></li>
             <li><a href="studio-architettonico.html">Studio Architettonico</a></li>
-            <li><a href="esercitazioni.html">Esercitazioni</a></li>
         </ul>
     </nav>
 
@@ -30,7 +30,9 @@
         <!-- Header -->
         <header class="project-header">
             <h1>Domus Arcuata</h1>
-            <p>Domus Arcuata è una residenza unifamiliare pensata come ponte abitato: un unico grande arco in pietra attraversa il corso d'acqua e sostiene il volume sospeso della casa, in dialogo con la Casa del Puente di Amancio Williams e con la memoria costruttiva degli acquedotti romani. Il progetto lavora sul contrasto tra la matericità della pietra a vista e la leggerezza delle vetrate, tra il paesaggio che scorre sotto l'edificio e gli spazi abitati che lo attraversano.</p>
+            <p>Domus Arcuata è una residenza unifamiliare pensata come ponte abitato: un unico grande arco in pietra attraversa il corso d'acqua e sostiene il volume sospeso della casa, in dialogo con la Casa del Puente di Amancio Williams e con la memoria costruttiva degli acquedotti romani.</p>
+            <p>Lo spazio interno si sviluppa su un unico livello di circa 216 mq, organizzato in una zona giorno completamente vetrata verso il bosco e una zona notte più raccolta, addossata alla parete in pietra a vista. Una scala attraversa l'arco strutturale e collega la casa alla sponda opposta, rendendo l'attraversamento del vuoto sottostante parte dell'esperienza abitativa quotidiana.</p>
+            <p>Il progetto lavora sul contrasto tra la matericità della pietra a vista e la leggerezza delle vetrate strutturali, tra il paesaggio autunnale che scorre sotto l'edificio e gli spazi abitati che lo attraversano. La serie di render diurni e notturni documenta come la stessa architettura cambi carattere con la luce: di giorno la pietra assorbe la luce naturale e si confonde con il bosco, di notte viene scavata da un sistema di luci verticali che ne accentuano la tessitura e la massa.</p>
         </header>
 
         <!-- Pulsanti verso le altre sezioni del progetto -->
@@ -50,6 +52,12 @@
                     <span class="nav-card-desc">Riferimenti visivi, atmosfere e ispirazioni.</span>
                     <span class="nav-card-arrow">Scopri &rarr;</span>
                 </a>
+                <a href="scheda-cliente.html" class="nav-card">
+                    <span class="nav-card-icon">&#9776;</span>
+                    <span class="nav-card-title">Scheda Cliente</span>
+                    <span class="nav-card-desc">Committente, programma funzionale e vincoli di progetto.</span>
+                    <span class="nav-card-arrow">Scopri &rarr;</span>
+                </a>
                 <a href="studio-materiali.html" class="nav-card">
                     <span class="nav-card-icon">&#9698;</span>
                     <span class="nav-card-title">Studio Materiali</span>
@@ -60,12 +68,6 @@
                     <span class="nav-card-icon">&#8962;</span>
                     <span class="nav-card-title">Studio Architettonico</span>
                     <span class="nav-card-desc">Piante, prospetti e sezioni del progetto.</span>
-                    <span class="nav-card-arrow">Scopri &rarr;</span>
-                </a>
-                <a href="esercitazioni.html" class="nav-card">
-                    <span class="nav-card-icon">&#9998;</span>
-                    <span class="nav-card-title">Esercitazioni</span>
-                    <span class="nav-card-desc">Test di illuminazione e prove di laboratorio.</span>
                     <span class="nav-card-arrow">Scopri &rarr;</span>
                 </a>
             </div>
@@ -124,6 +126,10 @@
                     <img src="img/camera026.jpg" alt="Prospetto Destra" loading="lazy">
                     <div class="card-overlay">Prospetto Destra</div>
                 </div>
+                <div class="card extra-render hidden" tabindex="0" role="button" aria-label="Apri immagine: Prospetto Sinistra" onclick="openLightbox(this)">
+                    <img src="img/camera028.jpg" alt="Prospetto Sinistra" loading="lazy">
+                    <div class="card-overlay">Prospetto Sinistra</div>
+                </div>
             </div>
 
             <div class="center-btn-container">
@@ -161,6 +167,11 @@
                 <button class="action-btn" onclick="alert('Navigazione al prossimo progetto')">View Next Project</button>
             </div>
         </section>
+
+        <!-- Link secondario, poco in vista perché non centrale nel percorso del progetto -->
+        <div class="center-btn-container" style="margin-top: 20px;">
+            <a href="esercitazioni.html" class="back-link">Esercitazioni e Prove di Laboratorio &rarr;</a>
+        </div>
 
     </main>
     </div>
