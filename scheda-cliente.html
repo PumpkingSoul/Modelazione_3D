@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheda Cliente - Domus Arcuata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Domus Arcuata</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Render</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="moodboard.html">Moodboard</a></li>
+            <li><a href="scheda-cliente.html" aria-current="page">Scheda Cliente</a></li>
+            <li><a href="studio-materiali.html">Studio Materiali</a></li>
+            <li><a href="studio-architettonico.html">Studio Architettonico</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrap">
+    <main class="portfolio-container">
+
+        <header class="project-header page-intro">
+            <a href="index.html" class="back-link">&larr; Torna al progetto</a>
+            <h1>Scheda Cliente</h1>
+            <p>Il profilo del committente, le esigenze funzionali e i vincoli che hanno indirizzato le scelte progettuali di Domus Arcuata.</p>
+        </header>
+
+        <section class="gallery-section sub-section">
+            <h2 class="section-subtitle">Il Committente</h2>
+            <p class="section-desc">Il progetto è pensato per una coppia di professionisti che lavora prevalentemente da remoto e cerca una residenza secondaria immersa nella natura, lontana dai ritmi della città. La richiesta esplicita era una casa che non si limitasse ad affacciarsi sul paesaggio, ma lo attraversasse fisicamente — da cui la scelta di un'abitazione-ponte sospesa sul corso d'acqua. Priorità del committente: ampie superfici vetrate verso il bosco, materiali naturali e durevoli, e un forte carattere architettonico riconoscibile.</p>
+        </section>
+
+        <section class="gallery-section sub-section">
+            <h2 class="section-subtitle">Programma Funzionale</h2>
+            <p class="section-desc">Gli ambienti richiesti e la loro relazione funzionale.</p>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-icon">&#9636;</span>
+                    <div>
+                        <span class="detail-label">Zona Giorno</span>
+                        <span class="detail-value">Soggiorno open space, cucina a isola e sala pranzo, affacciati sul bosco tramite vetrate a tutta altezza</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">&#9636;</span>
+                    <div>
+                        <span class="detail-label">Zona Notte</span>
+                        <span class="detail-value">Camera matrimoniale con parete in pietra a vista, una seconda camera adibita a studio</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">&#9636;</span>
+                    <div>
+                        <span class="detail-label">Collegamento Verticale</span>
+                        <span class="detail-value">Scala che attraversa l'arco strutturale, dalla quota abitativa fino alla sponda opposta</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">&#9636;</span>
+                    <div>
+                        <span class="detail-label">Spazi Esterni</span>
+                        <span class="detail-value">Terrazza affacciata sull'acqua, accesso diretto al bosco circostante</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section sub-section">
+            <h2 class="section-subtitle">Dati e Vincoli di Progetto</h2>
+            <p class="section-desc">I riferimenti dimensionali e normativi che hanno guidato il progetto.</p>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-icon">&#9707;</span>
+                    <div>
+                        <span class="detail-label">Lotto</span>
+                        <span class="detail-value">Sviluppato in lunghezza lungo il corso d'acqua, senza vincoli dimensionali stringenti</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">&#9707;</span>
+                    <div>
+                        <span class="detail-label">Superficie Costruita</span>
+                        <span class="detail-value">Circa 216 mq abitabili (9 × 24 m), su un unico livello abitativo sospeso</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">&#9878;</span>
+                    <div>
+                        <span class="detail-label">Vincoli Progettuali</span>
+                        <span class="detail-value">Rispetto del corso d'acqua e della vegetazione esistente, minimo impatto sul suolo</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">&#8962;</span>
+                    <div>
+                        <span class="detail-label">Contesto</span>
+                        <span class="detail-value">Area naturalistica con bosco di latifoglie, corso d'acqua a bassa portata</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox" aria-label="Chiudi">&times;</span>
+        <img id="lightbox-img" src="" alt="Ingrandimento">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
